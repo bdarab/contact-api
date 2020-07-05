@@ -6,6 +6,8 @@ const Login = () => {
     password: '',
   });
 
+  const { email, password } = user;
+
   const onChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
@@ -13,7 +15,6 @@ const Login = () => {
     console.log('Login submit');
   };
 
-  const { email, password } = user;
   return (
     <div className='form-container'>
       <h1>
